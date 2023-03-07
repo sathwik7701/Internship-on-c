@@ -1,0 +1,33 @@
+Q1 Write a loop statement that will show the following output:
+
+1
+
+12
+
+123
+
+1234
+
+12345
+
+The code is :
+
+#include <stdio.h>
+
+int main() 
+{
+    int rows, i, j;
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+    
+    for(i=1; i<=rows; i++)
+    {
+        for(j=1; j<=i; j++) 
+        {
+            printf("%d", j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
