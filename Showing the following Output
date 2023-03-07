@@ -1,0 +1,12 @@
+Q 2. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        int a = 2;
+        if (a >> 1)
+           printf("%d\n", a);
+    }
+    
+The Output is :
+2
