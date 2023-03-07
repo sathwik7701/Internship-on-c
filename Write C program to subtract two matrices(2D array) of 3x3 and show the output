@@ -1,0 +1,68 @@
+Q 4- Write C program to subtract two matrices(2D array) of 3x3 and show the output.
+
+The code is :
+
+#include <stdio.h>
+
+int main() {
+    int matrix1[3][3], matrix2[3][3], result[3][3];
+    int i, j;
+
+    // read matrix1
+    printf("Enter elements of matrix1:\n");
+    for (i = 0; i < 3; i++) 
+    {
+        for (j = 0; j < 3; j++)
+        {
+            scanf("%d", &matrix1[i][j]);
+        }
+    }
+
+    // read matrix2
+    printf("Enter elements of matrix2:\n");
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++) 
+        {
+            scanf("%d", &matrix2[i][j]);
+        }
+    }
+
+    // subtract matrices
+    for (i = 0; i < 3; i++) 
+    {
+        for (j = 0; j < 3; j++)
+        {
+            result[i][j] = matrix1[i][j] - matrix2[i][j];
+        }
+    }
+
+    // print result matrix
+    printf("Resultant matrix after subtraction:\n");
+    for (i = 0; i < 3; i++) 
+    {
+        for (j = 0; j < 3; j++)
+        {
+            printf("%d\t", result[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+OUTPUT IS :
+
+Enter elements of matrix1:
+1 2 3
+4 5 6
+7 8 9
+Enter elements of matrix2:
+9 8 7
+6 5 4
+3 2 1
+Resultant matrix after subtraction:
+-8 -6	-4	
+-2	0	 2	
+ 4	6	 8	
+
